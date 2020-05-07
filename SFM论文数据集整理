@@ -1,0 +1,82 @@
+SFM相关论文、软件、数据集整理
+SFM定义：
+运动结构恢复(Structure from motion)，即给出多幅图像及其图像特征的一个稀疏对应集合，估计3D点的位置，这个求解过程通常涉及3D几何（结构）和摄像机姿态（运动）的同时估计，计算机视觉研究内容之一。
+三种策略：增量式、全局式、层级式
+一、增量式：
+1）论文
+[1] Agarwal S, Snavely N, Simon
+I, et al. Building Rome in a day[J]. Communications of the Acm, 2011,
+54(10):105-112.
+
+[2] Frahm J M, Fite-Georgel P,
+Gallup D, et al. Building Rome on a cloudless day[C]// European Conference on
+Computer Vision. Springer-Verlag, 2010:368-381.
+
+[3] Heinly J, Schönberger J L,
+Dunn E, et al. Reconstructing the world* in six days[C]// Computer Vision and
+Pattern Recognition. IEEE, 2015:3287-3295.
+
+[4] Schönberger J L, Frahm J M.
+Structure-from-Motion Revisited[C]// IEEE Conference on Computer Vision and
+Pattern Recognition. IEEE, 2016.
+
+[5] Wu C. Towards Linear-Time
+Incremental Structure from Motion[C]// International Conference on 3d Vision.
+IEEE Computer Society, 2013:127-134.
+
+[6] Snavely N, Seitz S M,
+Szeliski R. Modeling the World from Internet Photo Collections[J].
+International Journal of Computer Vision, 2008, 80(2):189-210.
+
+[7] Snavely K N. Scene
+reconstruction and visualization from internet photo collections[M]. University
+of Washington, 2008.
+
+[8] Snavely N, Seitz S M, Szeliski
+R. Photo Tourism: Exploring Photo Collections In 3D[J]. Acm Transactions on
+Graphics, 2006, 25(3):págs. 835-846.
+
+[9] Snavely N, Seitz S M,
+Szeliski R. Skeletal graphs for efficient structure from motion[C]// Computer
+Vision and Pattern Recognition, 2008. CVPR 2008. IEEE Conference on. IEEE,
+2008:1-8.
+
+[10] Sweeney C, Fragoso V,
+Hollerer T, et al. Large Scale SfM with the Distributed Camera Model[C]//
+Fourth International Conference on 3d Vision. IEEE, 2016:230-238.
+
+[11] Moulon P, Monasse P, Marlet
+R. Adaptive Structure from Motion with a Contrario Model Estimation[M]//
+Computer Vision – ACCV 2012. Springer Berlin Heidelberg, 2012:257-270.
+
+2）开源软件
+Bundler   http://www.cs.cornell.edu/~snavely/bundler/
+VisualSfM  http://ccwu.me/vsfm/
+COLMAP  https://colmap.github.io/
+
+二、全局式：
+1）论文
+[1] D. Crandall, A. Owens, N.
+Snavely, and D. P. Huttenlocher. Discrete-Continuous Optimization for
+Large-Scale Structure from Motion[C]. CVPR, 2011.
+
+[2] C. Sweeney, T. Sattler, T. Hollerer, M. Turk,
+and M. Pollefeys. Optimizing the viewing graph for structure-frommotion[C].
+CVPR, 2015.
+
+[3] K. Wilson and N. Snavely. Robust global
+translations with 1dsfm[C]. ECCV, 2014.
+2）开源软件、算法
+Theia  http://www.theia-sfm.org/
+OpenMVG https://github.com/openMVG/openMVG
+三、层级式：
+[1] R. Gherardi, M. Farenzena, and A. Fusiello.
+Improving the efﬁciency of hierarchical structure-and-motion[C]. CVPR,
+2010.
+
+数据集
+“Tanks and Temples: Benchmarking Large-Scale Scene Reconstruction” A. Knapitsch, J. Park, Q. Zhou, V. Koltun. SIGGRAPH 2017.
+https://www.tanksandtemples.org/
+
+“A Multi-View Stereo Benchmark with HighResolution Images and Multi-Camera Videos” T. Schöps, J. L. Schönberger, S. Galliani, T. Sattler, K. Schindler, M. Pollefeys, A. Geiger. CVPR 2017.
+https://www.eth3d.net/
